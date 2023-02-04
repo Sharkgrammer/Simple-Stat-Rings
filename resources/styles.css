@@ -1,0 +1,286 @@
+/*noinspection ALL*/
+.datetime{
+    x: 49%+2;
+    y: 60%+2;
+}
+
+/*noinspection ALL*/
+#timeElem {
+    font-size: 90;
+    text-anchor: middle;
+    x: 0%;
+    y: 0%;
+}
+
+/*noinspection ALL*/
+#timeElem2 {
+    font-size: 90;
+    text-anchor: middle;
+    x: 0%+6;
+    y: 0%+3;
+}
+
+/*noinspection ALL*/
+#dateElem {
+    font-size: 30;
+    text-anchor: middle;
+    x: 0%;
+    y: -20%;
+}
+
+/*noinspection ALL*/
+#dateElem2 {
+    font-size: 30;
+    text-anchor: middle;
+    x: 0%+4;
+    y: -20%+2;
+}
+
+/*noinspection ALL*/
+.displayText {
+    font-family: System-Bold;
+    text-length: 32;
+    fill: white;
+}
+
+/*noinspection ALL*/
+.displayText2 {
+    font-family: System-Bold;
+    text-length: 32;
+    fill: black;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/*noinspection ALL*/
+arc {
+    arc-width: 8;
+    start-angle: 90;
+    sweep-angle: 200;
+}
+
+/**
+    ** HEART **
+ */
+
+/*noinspection ALL*/
+.heartSection {
+    x: 4%;
+    y: 62%;
+}
+
+/*noinspection ALL*/
+#heartArc {
+    x: 0;
+    y: 0;
+    width: 28%;
+    height: 28%;
+    fill: red;
+}
+
+/*noinspection ALL*/
+#heartImage {
+    x: 10%;
+    y: 6%+2;
+    width: 25;
+    height:  25;
+}
+
+/*noinspection ALL*/
+#heartText {
+    x: 14%-2;
+    y: 19%+3;
+    font-size: 18;
+    text-anchor: middle;
+}
+
+/**
+    ** STEPS **
+ */
+
+/*noinspection ALL*/
+.stepsSection {
+    x: 36%;
+    y: 68%;
+}
+
+/*noinspection ALL*/
+#stepsArc {
+    x: 0;
+    y: 0;
+    width: 28%;
+    height: 28%;
+    fill: deepskyblue;
+}
+
+/*noinspection ALL*/
+#stepsImage {
+    x: 10%;
+    y: 6%-2;
+    width: 25;
+    height: 30;
+}
+
+/*noinspection ALL*/
+#stepsText {
+    x: 14%-2;
+    y: 19%+3;
+    font-size: 18;
+    text-anchor: middle;
+}
+
+/**
+    ** DISTANCE **
+*/
+
+/*noinspection ALL*/
+.distanceSection {
+    x: 68%;
+    y: 62%;
+}
+
+/*noinspection ALL*/
+#distanceArc {
+    x: 0%;
+    y: 0%;
+    width: 28%;
+    height: 28%;
+    fill: orange;
+}
+
+/*noinspection ALL*/
+#distanceImage {
+    x: 10%;
+    y: 6%-2;
+    width: 25;
+    height: 30;
+}
+
+/*noinspection ALL*/
+#distanceText {
+    x: 14%-2;
+    y: 19%+3;
+    font-size: 18;
+    text-anchor: middle;
+}
+
+/**
+    ** AZM **
+*/
+
+/*noinspection ALL*/
+.AZMSection {
+    x: 4%;
+    y: 10%;
+}
+
+/*noinspection ALL*/
+#AZMArc {
+    x: 0%;
+    y: 0%;
+    width: 28%;
+    height: 28%;
+    fill: gold;
+}
+
+/*noinspection ALL*/
+#AZMImage {
+    x: 10%;
+    y: 6%;
+    width: 25;
+    height: 25;
+}
+
+/*noinspection ALL*/
+#AZMText {
+    x: 14%-2;
+    y: 19%+3;
+    font-size: 18;
+    text-anchor: middle;
+}
+
+/**
+    ** CALORIES **
+*/
+
+/*noinspection ALL*/
+.caloriesSection {
+    x: 36%;
+    y: 4%;
+}
+
+/*noinspection ALL*/
+#caloriesArc {
+    x: 0%;
+    y: 0%;
+    width: 28%;
+    height: 28%;
+    fill: limegreen;
+}
+
+/*noinspection ALL*/
+#caloriesImage {
+    x: 10%;
+    y: 6%-2;
+    width: 25;
+    height: 30;
+}
+
+/*noinspection ALL*/
+#caloriesText {
+    x: 14%-2;
+    y: 19%+3;
+    font-size: 18;
+    text-anchor: middle;
+}
+
+/**
+    ** FLOORS **
+*/
+
+/*noinspection ALL*/
+.floorsSection {
+    x: 68%;
+    y: 10%;
+}
+
+/*noinspection ALL*/
+#floorsArc {
+    x: 0%;
+    y: 0%;
+    width: 28%;
+    height: 28%;
+    fill: magenta;
+}
+
+/*noinspection ALL*/
+#floorsImage {
+    x: 10%;
+    y: 6%;
+    width: 25;
+    height: 25;
+}
+
+/*noinspection ALL*/
+#floorsText {
+    x: 14%-2;
+    y: 19%+3;
+    font-size: 18;
+    text-anchor: middle;
+}
+
+/*noinspection ALL*/
+.backArc {
+    x: 0%+3;
+    y: 0%+3;
+    width: 28%-6;
+    height: 28%-6;
+    fill: #888888;
+    arc-width: 2;
+    padding: 20;
+    margin: 20;
+    sweep-angle: 360;
+
+}

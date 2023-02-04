@@ -1,0 +1,132 @@
+<svg id="screen" pointer-events="visible">
+
+    <gradientRect id="background" width="100%" height="100%" gradient-type="radial"
+                  gradient-x1="50%" gradient-y1="50%"
+                  gradient-x2="50%+120" gradient-y2="50%+120"
+                  gradient-color1="red" gradient-color2="#000000"/>
+
+
+    <!-- Time/Date -->
+    <section class="datetime">
+
+        <text id="dateElem2" class="displayText2"/>
+        <text id="timeElem2" class="displayText2"/>
+
+        <text id="dateElem" class="displayText"/>
+        <text id="timeElem" class="displayText"/>
+    </section>
+
+
+    <!-- Top Stats -->
+
+    <!-- AZM -->
+    <section class="AZMSection">
+        <arc class="backArc"/>
+        <arc id="AZMArc"/>
+
+        <g>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+
+            <image id="AZMImage" href="images/AZM.png"/>
+        </g>
+
+        <text id="AZMText" class="displayText"/>
+    </section>
+
+    <!-- calories -->
+    <section class="caloriesSection">
+        <arc class="backArc"/>
+        <arc id="caloriesArc"/>
+
+        <g>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+
+            <image id="caloriesImage" href="images/calories.png"/>
+        </g>
+
+        <text id="caloriesText" class="displayText"/>
+    </section>
+
+    <!-- floors -->
+    <section class="floorsSection">
+        <arc class="backArc"/>
+        <arc id="floorsArc"/>
+
+        <g>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+
+            <image id="floorsImage" href="images/floors.png"/>
+        </g>
+
+        <text id="floorsText" class="displayText"/>
+    </section>
+
+    <!-- Bottom Stats -->
+
+    <!-- Heart -->
+    <section class="heartSection">
+        <arc class="backArc"/>
+        <arc id="heartArc"/>
+
+        <g>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+
+            <image id="heartImage" href="images/heart.png"/>
+        </g>
+
+        <text id="heartText" class="displayText"/>
+    </section>
+
+    <section class="stepsSection">
+        <!-- Steps -->
+        <arc class="backArc"/>
+        <arc id="stepsArc"/>
+
+        <g>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+
+            <image id="stepsImage" href="images/steps.png"/>
+        </g>
+
+        <text id="stepsText" class="displayText"/>
+    </section>
+
+    <section class="distanceSection">
+        <!-- distance -->
+        <arc class="backArc"/>
+        <arc id="distanceArc"/>
+
+        <g>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+
+            <image id="distanceImage" href="images/distance.png"/>
+        </g>
+
+        <text id="distanceText" class="displayText"/>
+    </section>
+
+</svg>
