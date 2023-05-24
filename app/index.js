@@ -56,7 +56,7 @@ function showBatteryLevel(power) {
         batteryRect.style.fill = batteryLevel > 20 ? getColourFromGoal() : "#FF0000";
     }
 
-    let adjustedBat = Math.floor((batteryLevel / 100) * 55);
+    let adjustedBat = Math.floor((batteryLevel / 100) * maxBat);
 
     batteryRect.width = adjustedBat;
     batteryRect.x = (defaultX + maxBat - adjustedBat)
