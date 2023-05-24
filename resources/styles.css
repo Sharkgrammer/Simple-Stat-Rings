@@ -1,12 +1,12 @@
 /*noinspection ALL*/
 .datetime{
     x: 49%+2;
-    y: 60%+2;
+    y: 56%+3;
 }
 
 /*noinspection ALL*/
 #timeElem {
-    font-size: 90;
+    font-size: 80;
     text-anchor: middle;
     x: 0%;
     y: 0%;
@@ -14,27 +14,73 @@
 
 /*noinspection ALL*/
 #timeElem2 {
-    font-size: 90;
+    font-size: 80;
     text-anchor: middle;
-    x: 0%+6;
-    y: 0%+3;
+    x: 0%+4;
+    y: 0%+2;
 }
 
 /*noinspection ALL*/
 #dateElem {
-    font-size: 30;
+    font-size: 25;
     text-anchor: middle;
     x: 0%;
-    y: -20%;
+    y: -18%;
 }
 
 /*noinspection ALL*/
 #dateElem2 {
-    font-size: 30;
+    font-size: 25;
     text-anchor: middle;
-    x: 0%+4;
-    y: -20%+2;
+    x: 0%+3;
+    y: -18%+1;
 }
+
+/*noinspection ALL*/
+.batterySection {
+    x: -10%+1;
+    y: 2%+3;
+}
+
+/*noinspection ALL*/
+#batteryImage {
+    x: 0%;
+    y: 0%;
+    width: 60;
+    height: 24;
+}
+
+/*noinspection ALL*/
+#batteryRect{
+    x: 0%+5;
+    y: 0%+1;
+    width: 55;
+    height: 22;
+    fill:white;
+}
+
+/*noinspection ALL*/
+#batteryElem {
+    font-family: System-Bold;
+    text-length: 5;
+    text-anchor: middle;
+    fill: white;
+    font-size: 20;
+    x: 10%+1;
+    y: 5%+3;
+}
+
+/*noinspection ALL*/
+#batteryElem2 {
+    font-family: System-Bold;
+    text-length: 5;
+    text-anchor: middle;
+    fill: black;
+    font-size: 20;
+    x: 10%+2;
+    y: 5%+4;
+}
+
 
 /*noinspection ALL*/
 .displayText {

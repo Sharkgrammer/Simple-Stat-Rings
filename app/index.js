@@ -3,12 +3,7 @@ import * as clock from "./simple/clock";
 import * as activity from "./simple/activity";
 import * as hrm from "./simple/hrm";
 
-/**
- * Background colour code
- */
-const background = document.getElementById("background");
-
-function setBackgroundColour() {
+function getColourFromGoal() {
     let colour;
 
     switch (activity.getPrimaryGoal()) {
@@ -32,10 +27,40 @@ function setBackgroundColour() {
             break;
     }
 
-    background.gradient.colors.c1 = colour;
+    return colour;
+}
+
+/**
+ * Background colour code
+ */
+const background = document.getElementById("background");
+
+function setBackgroundColour() {
+    background.gradient.colors.c1 = getColourFromGoal();
 }
 
 setBackgroundColour();
+
+const batteryRect = document.getElementById("batteryRect");
+
+function showBatteryLevel(power) {
+    const defaultX = 5;
+    const maxBat = 55;
+
+    let batteryLevel = power.battery;
+    let isCharging = power.charging;
+
+    if (isCharging) {
+        batteryRect.style.fill = "#00FF00";
+    } else {
+        batteryRect.style.fill = batteryLevel > 20 ? getColourFromGoal() : "#FF0000";
+    }
+
+    let adjustedBat = Math.floor((batteryLevel / 100) * 55);
+
+    batteryRect.width = adjustedBat;
+    batteryRect.x = (defaultX + maxBat - adjustedBat)
+}
 
 /**
  * Datetime code
@@ -45,10 +70,17 @@ const timeElem = document.getElementById("timeElem");
 const dateElem = document.getElementById("dateElem");
 const timeElem2 = document.getElementById("timeElem2");
 const dateElem2 = document.getElementById("dateElem2");
+const batteryElem = document.getElementById("batteryElem");
+const batteryElem2 = document.getElementById("batteryElem2");
 
 function clockCallback(data) {
     timeElem.text = timeElem2.text = data.time;
     dateElem.text = dateElem2.text = data.date;
+    batteryElem.text = batteryElem2.text = data.power.battery + "%";
+
+    // For if the user updates their goals
+    setBackgroundColour();
+    showBatteryLevel(data.power);
 }
 
 clock.initialize("minutes", "shortDate", clockCallback);
@@ -122,20 +154,13 @@ hrm.initialize(hrmCallback);
  */
 
 const screen = document.getElementById("screen");
-let iconsShown = false, texts = [AZMText, caloriesText, floorsText, heartText, stepsText, distanceText]
+let iconsShown = false;
 
 screen.addEventListener("click", (evt) => {
-    let visibility = "hidden";
-
     if (iconsShown) {
         screen.animate("disable");
-        visibility = "visible";
     } else {
         screen.animate("enable");
-    }
-
-    for (let i = 0; i < texts.length; i++) {
-        texts[i].style.visibility = visibility;
     }
 
     iconsShown = !iconsShown;

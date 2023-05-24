@@ -14,6 +14,20 @@
 
         <text id="dateElem" class="displayText"/>
         <text id="timeElem" class="displayText"/>
+
+        <section class="batterySection">
+            <rect id="batteryRect"/>
+
+            <g>
+                <animate attributeName="opacity" from="1" to="0" dur="0.1" begin="enable"/>
+                <animate attributeName="opacity" from="0" to="1" dur="0.1" begin="disable"/>
+
+                <text id="batteryElem2"/>
+                <text id="batteryElem"/>
+            </g>
+
+            <image id="batteryImage" href="images/battery.png"/>
+        </section>
     </section>
 
 
@@ -25,16 +39,21 @@
         <arc id="AZMArc"/>
 
         <g>
-            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.03"/>
 
-            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.03"/>
 
             <image id="AZMImage" href="images/AZM.png"/>
         </g>
 
-        <text id="AZMText" class="displayText"/>
+        <g>
+            <animate attributeName="opacity" from="1" to="0" dur="0.1" begin="enable"/>
+            <animate attributeName="opacity" from="0" to="1" dur="0.1" begin="disable"/>
+
+            <text id="AZMText" class="displayText"/>
+        </g>
     </section>
 
     <!-- calories -->
@@ -43,16 +62,21 @@
         <arc id="caloriesArc"/>
 
         <g>
-            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.03"/>
 
-            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.03"/>
 
             <image id="caloriesImage" href="images/calories.png"/>
         </g>
 
-        <text id="caloriesText" class="displayText"/>
+        <g>
+            <animate attributeName="opacity" from="1" to="0" dur="0.1" begin="enable"/>
+            <animate attributeName="opacity" from="0" to="1" dur="0.1" begin="disable"/>
+
+            <text id="caloriesText" class="displayText"/>
+        </g>
     </section>
 
     <!-- floors -->
@@ -61,16 +85,21 @@
         <arc id="floorsArc"/>
 
         <g>
-            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.03"/>
 
-            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.03"/>
 
             <image id="floorsImage" href="images/floors.png"/>
         </g>
 
-        <text id="floorsText" class="displayText"/>
+        <g>
+            <animate attributeName="opacity" from="1" to="0" dur="0.1" begin="enable"/>
+            <animate attributeName="opacity" from="0" to="1" dur="0.1" begin="disable"/>
+
+            <text id="floorsText" class="displayText"/>
+        </g>
     </section>
 
     <!-- Bottom Stats -->
@@ -81,16 +110,21 @@
         <arc id="heartArc"/>
 
         <g>
-            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.03"/>
 
-            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.03"/>
 
             <image id="heartImage" href="images/heart.png"/>
         </g>
 
-        <text id="heartText" class="displayText"/>
+        <g>
+            <animate attributeName="opacity" from="1" to="0" dur="0.1" begin="enable"/>
+            <animate attributeName="opacity" from="0" to="1" dur="0.1" begin="disable"/>
+
+            <text id="heartText" class="displayText"/>
+        </g>
     </section>
 
     <section class="stepsSection">
@@ -99,16 +133,21 @@
         <arc id="stepsArc"/>
 
         <g>
-            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.03"/>
 
-            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.03"/>
 
             <image id="stepsImage" href="images/steps.png"/>
         </g>
 
-        <text id="stepsText" class="displayText"/>
+        <g>
+            <animate attributeName="opacity" from="1" to="0" dur="0.1" begin="enable"/>
+            <animate attributeName="opacity" from="0" to="1" dur="0.1" begin="disable"/>
+
+            <text id="stepsText" class="displayText"/>
+        </g>
     </section>
 
     <section class="distanceSection">
@@ -117,16 +156,21 @@
         <arc id="distanceArc"/>
 
         <g>
-            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="0%,0%" to="-6%-1,-1%-1" begin="enable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1" to="1.5" begin="enable" dur="0.03"/>
 
-            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.05"/>
-            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.05"/>
+            <animateTransform attributeType="translate" from="-6%-1,-1%-1" to="0%,0%" begin="disable" dur="0.03"/>
+            <animateTransform attributeType="scale" from="1.5" to="1" begin="disable" dur="0.03"/>
 
             <image id="distanceImage" href="images/distance.png"/>
         </g>
 
-        <text id="distanceText" class="displayText"/>
+        <g>
+            <animate attributeName="opacity" from="1" to="0" dur="0.1" begin="enable"/>
+            <animate attributeName="opacity" from="0" to="1" dur="0.1" begin="disable"/>
+
+            <text id="distanceText" class="displayText"/>
+        </g>
     </section>
 
 </svg>

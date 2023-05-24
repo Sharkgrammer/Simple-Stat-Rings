@@ -7,6 +7,7 @@ import { preferences } from "user-settings";
 
 import { days, months, monthsShort } from "./locales/en.js";
 import * as util from "./utils";
+import { battery, charger } from "power";
 
 let dateFormat, clockCallback;
 
@@ -49,5 +50,11 @@ function tickHandler(evt) {
       dateString = `${monthName} ${dayNumber}`;
       break;
   }
-  clockCallback({time: timeString, date: dateString});
+
+  // Use the power api to get battery level
+  let batNum = Math.floor(battery.chargeLevel);
+  let isCharging = charger.connected;
+  let power = {battery: batNum, charging: isCharging};
+
+  clockCallback({time: timeString, date: dateString, power: power});
 }
