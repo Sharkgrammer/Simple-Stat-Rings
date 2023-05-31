@@ -154,9 +154,11 @@ hrm.initialize(hrmCallback);
  */
 
 const screen = document.getElementById("screen");
+const clickable = document.getElementById("clickable");
+
 let iconsShown = false;
 
-screen.addEventListener("click", (evt) => {
+clickable.addEventListener("click", (evt) => {
     if (iconsShown) {
         screen.animate("disable");
     } else {
