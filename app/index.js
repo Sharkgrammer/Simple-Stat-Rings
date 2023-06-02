@@ -120,8 +120,6 @@ function activityCallback(data) {
 
     floorsText.text = data.elevationGain.pretty;
     floorsArc.sweepAngle = (data.elevationGain.raw / data.elevationGain.goal) * 360;
-
-
 }
 
 activity.initialize("seconds", activityCallback);
